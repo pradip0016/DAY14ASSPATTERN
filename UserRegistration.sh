@@ -56,12 +56,13 @@ fi
 
 echo "Enter Password :"
         read  password
-        if  [[ ${#password} -ge 8 && "$password" == *[A-Z]* && "$password" == *[a-z]* && "$password" == *[0-9]* ]]
+        if  [[ ${#password} -ge 8 && "$password" == *[A-Z]* && "$password" == *[0-9]* && "$password" == *[a-z]* && "$password" == *[@_-%*]* ]]
         then
                 echo "It is valid"
         else
                 echo "It is invalid"
         fi
+
 
 
 
