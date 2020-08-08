@@ -26,3 +26,15 @@ echo "Enter your last name :"
 	else
 		echo "last name is invalid"
 	fi
+
+#Email_ID
+
+echo "Enter your email id :"
+	read mailId
+	PAT2="^([a-z A-z 0-9 ._+%-]+)@([a-z A-Z 0-9]+)\.([a-z.]{2,8})$";
+	if [[ $mailId =~ $PAT2 ]]
+	then
+		echo "It is valid"
+	else
+		echo "It is invalid"
+	fi
