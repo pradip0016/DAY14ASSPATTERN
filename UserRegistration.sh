@@ -15,3 +15,14 @@ echo "Enter your first name :"
 		echo "Name is invalid"
 	fi
 
+#Last name
+
+echo "Enter your last name :"
+	read lastName
+	PAT1="^[A-Z]{1}[a-z]{2}$"
+	if [[ $lastName =~ $PAT1 ]]
+	then
+		echo "last name is valid"
+	else
+		echo "last name is invalid"
+	fi
