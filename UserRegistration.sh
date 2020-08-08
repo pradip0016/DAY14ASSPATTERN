@@ -38,3 +38,16 @@ echo "Enter your email id :"
 	else
 		echo "It is invalid"
 	fi
+
+# validation of mobile number
+
+echo "Enter The Phone Number : "
+read mobileNumber
+PAT3="^[+0-9]{2,3} [ ]?[0-9]{10}$";
+
+if [[ $mobileNumber =~ $PAT3 ]]
+then
+        echo "Phone Number Is Valid";
+else
+        echo "Phone Number Is Not Valid";
+fi
