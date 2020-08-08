@@ -51,3 +51,16 @@ then
 else
         echo "Phone Number Is Not Valid";
 fi
+
+#Password validation 
+
+echo "Enter Password :"
+        read  password
+        if  [[ ${#password} -ge 8 ]]
+        then
+                echo "It is valid"
+        else
+                echo "It is invalid"
+        fi
+
+
